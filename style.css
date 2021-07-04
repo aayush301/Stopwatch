@@ -1,0 +1,126 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe WP', system-ui, Arial, Sans-Serif;
+}
+
+h1
+{
+    color: blue;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(219 219 232);
+    padding: 10px;
+}
+
+.container
+{
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+}
+
+div#time
+{
+    font-size: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px)
+{
+    div#time
+    {
+        font-size: 55px;
+    }
+}
+
+
+/* Buttons styling */
+.buttons
+{
+    text-align: center;
+    margin: 40px;
+}
+
+.button
+{
+    font-size: 20px;
+    color: white;
+    background-color: tomato;
+    border-radius: 4px;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.afterButtons
+{
+    display: none;
+}
+
+.button:hover
+{
+    transition: all 0.2s ease-in;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0);
+}
+
+.buttons #pause-resume
+{
+    width: 100px;
+}
+
+
+/* Table styling */
+table.lap
+{
+    display: none;
+}
+
+.tableContainer
+{
+    overflow-y: auto;
+    height: 600px;
+    min-width: 80%;
+    margin: 0px auto 100px auto;
+}
+
+table
+{
+    width: 100%;
+    font-size: 20px;
+    border-collapse: collapse;
+    height:auto;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0);
+    background-color: #f6fffc;
+}
+
+th,td
+{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.header
+{
+    background-color: #16a085;
+    color: #fff;
+}
+
+tr:hover
+{
+    background-color: #f5f5f5;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0);
+    transition: all .2s ease-in;
+    transform:scaleY(1.02);
+}
+
+.header:hover
+{
+    background-color: #16a085;
+}
